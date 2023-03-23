@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(110, 140, 195);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+form {
+  background-color: rgba(40, 23, 66, 0.7);
+  width: 50vw;
+  min-width: 300px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 50px 3em 50px;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+label,
+legend {
+  display: block;
+  padding-top: 2em;
+}
+
+legend {
+  margin-bottom: 0.5em;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  margin-top: 1em;
+  padding: 0 0 0 0.75em;
+  min-height: 2.5em;
+  /*box-sizing: border-box;*/
+  color: rgb(60, 60, 69);
+}
+
+input:not([type="checkbox"], [type="radio"]):focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid rgb(169, 116, 228);
+  color: rgb(60, 60, 69);
+  transition: 0.5s;
+}
+
+input:not([type="checkbox"], [type="radio"]):hover,
+textarea:hover,
+select:hover {
+  outline: 2px solid rgb(169, 116, 228);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0 0.5em 0 0;
+  width: 20px;
+  height: 20px;
+  min-height: 2em;
+}
+
+.radio-checkbox label {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+input[type="submit"] {
+  background-color: rgb(25, 227, 149);
+  color: white;
+  margin-top: 2em;
+}
+
+::placeholder,
+select {
+  color: rgb(60, 60, 69);
+}
+
+textarea {
+  padding-top: 0.75em;
+}
